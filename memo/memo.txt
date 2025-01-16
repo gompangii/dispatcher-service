@@ -1,0 +1,17 @@
+# 10.4.3 테스트 바인더를 통한 통합 테스트
+## 배송 서비스 테스트 바인더 의존성 추가
+### 아래 책내용 대로 하면 스프링 부트 '3.4.1'에서는 에러 발생
+    //	testImplementation("org.springframework.cloud:spring-cloud-stream") {
+    //		artifact {
+    //			name = "spring-cloud-stream"
+    //			extension = "jar"
+    //			type ="test-jar"
+    //			classifier = "test-binder"
+    //		}
+    //	}
+### 스프링 부트 '3.4.1'에서는 아래와 같이 추가해야함
+    implementation 'org.springframework.cloud:spring-cloud-stream'
+	testImplementation 'org.springframework.cloud:spring-cloud-stream-test-binder'
+
+
+	
