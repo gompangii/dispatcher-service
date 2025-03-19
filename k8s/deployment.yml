@@ -52,4 +52,4 @@ spec:
       volumes:
         - name: dispatcher-config-volume
           configMap:
-            name: polar-rabbitmq
+            name: dispatcher-config
