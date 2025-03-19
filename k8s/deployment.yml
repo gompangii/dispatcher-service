@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
         - name: dispatcher-service
-          image: dispatcher-service
+          image: docker.io/gompangii/dispatcher-service
           imagePullPolicy: IfNotPresent
           lifecycle:
             preStop:
