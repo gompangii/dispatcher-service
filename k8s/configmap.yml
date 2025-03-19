@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: dispatcher-config
+  labels:
+    app: dispatcher-service
+data:
+  application.yml: |
+    spring:
+      rabbitmq:
+        host: polar-rabbitmq
