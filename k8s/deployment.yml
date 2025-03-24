@@ -30,6 +30,8 @@ spec:
           ports:
             - containerPort: 9003
           env:
+            - name: JAVA_OPS
+              value: "-Xms256m -Xmx512m"
             - name: SPRING_CLOUD_CONFIG_URI
               value: http://config-service
             - name: SPRING_RABBITMQ_HOST
