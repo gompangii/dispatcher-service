@@ -31,7 +31,7 @@ spec:
             - containerPort: 9003
           env:
             - name: JAVA_OPS
-              value: "-Xms256m -Xmx512m"
+              value: "-Xms128m -Xmx128m"
           livenessProbe:
             httpGet:
               path: /actuator/health/liveness
